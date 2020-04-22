@@ -2,7 +2,7 @@ from caserec.evaluation.rating_prediction import RatingPredictionEvaluation
 from caserec.evaluation.item_recommendation import ItemRecommendationEvaluation
 from caserec.utils.split_database import SplitDatabase
 from hyperopt import hp, Trials
-from hyperopt import tpe, atpe, rand 
+from hyperopt import tpe, rand 
 from hyperopt import fmin
 from hyperopt import STATUS_OK
 from .rating_model import RatingModel, RATING_SPACE
