@@ -89,7 +89,7 @@ class AutoEstimator():
                           sep_write=self.sep_write, 
                           n_splits=self.n_splits, 
                           header=self.header, 
-                          names=self.names).kfoldcrossvalidation()
+                          names=self.names).kfoldcrossvalidation(random_state=47)
         else:
             SplitDatabase(input_file=self.datapath, 
                           dir_folds = self.dir_folds, 
@@ -97,7 +97,7 @@ class AutoEstimator():
                           sep_write=self.sep_write,
                           n_splits=self.n_splits, 
                           header=self.header,
-                          names=self.names).shuffle_split(test_size=self. test_percentage)
+                          names=self.names).shuffle_split(test_size=self. test_percentage, random_state=47)
             
         self.train_paths, self.test_paths, self.pred_paths = get_fold_paths(self.dir_folds, self.n_splits)
         
