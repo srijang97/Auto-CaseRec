@@ -112,6 +112,7 @@ class AutoEstimator():
                         'model': config['type'],
                         'config': config}
         
+        
         if self.predictor=='rating':
             
             results = {'MAE': [], 'RMSE': []}
@@ -132,9 +133,9 @@ class AutoEstimator():
                 
                 print("Split {} Loss: {}".format(i, results[self.eval_metric][i]))
                 
-#                 if i>self.early_stop_split:
-#                     if mean(results[self.eval_metric]) > self.best_loss:
-#                         break;
+                if i>self.early_stop_split:
+                    if mean(results[self.eval_metric]) > self.best_loss:
+                        break;
                         
         else:
             
@@ -157,7 +158,7 @@ class AutoEstimator():
                 print("Split {} Loss: {}".format(i, results[self.eval_metric][i]))
                 
                 if i>self.early_stop_split:
-                    if mean(results[self.eval_metric]) > self.best_loss:
+                    if max(results[self.eval_metric]) < self.best_loss:
                         break;
         return results
                 
