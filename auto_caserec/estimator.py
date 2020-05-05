@@ -42,7 +42,7 @@ class AutoEstimator():
         else:
             self.results_path=""
         
-        field_names = ["Date", "Type", "Iteration", "Metric", "Value", "Configuration", "Time Taken"]
+        field_names = ["Test", "Iteration", "Metric", "Value", "Configuration", "Time Taken"]
         
         if os.path.exists(self.results_path+"optim_results.csv") is False:
             with open(self.results_path+"optim_results.csv", 'w', newline='') as f:
@@ -73,7 +73,7 @@ class AutoEstimator():
             self.space = RATING_SPACE
         elif predictor=='item':
             self.space = ITEM_SPACE
-            self.eval_metric = self.eval_metric+"@"+str(self.eval_rank)
+            self.eval_metric = self.eval_metric#+"@"+str(self.eval_rank)
             
         self.iteration = 0
         self.trials = None
@@ -89,7 +89,7 @@ class AutoEstimator():
                           sep_write=self.sep_write, 
                           n_splits=self.n_splits, 
                           header=self.header, 
-                          names=self.names).kfoldcrossvalidation(random_state=47)
+                          names=self.names).kfoldcrossvalidation(random_state=1)
         else:
             SplitDatabase(input_file=self.datapath, 
                           dir_folds = self.dir_folds, 
@@ -97,7 +97,7 @@ class AutoEstimator():
                           sep_write=self.sep_write,
                           n_splits=self.n_splits, 
                           header=self.header,
-                          names=self.names).shuffle_split(test_size=self. test_percentage, random_state=47)
+                          names=self.names).shuffle_split(test_size=self. test_percentage)
             
         self.train_paths, self.test_paths, self.pred_paths = get_fold_paths(self.dir_folds, self.n_splits)
         
@@ -144,20 +144,21 @@ class AutoEstimator():
             
             for i in range(self.n_splits):
                 
-                eval_args = {self.pred_paths[i], self.test_paths[i]}
-                
+                eval_args = {'prediction_file': self.pred_paths[i], 'test_file': self.test_paths[i]}
+#                 print(eval_args)
+#                 print(train_kwargs)
                 ItemModel(train_file=self.train_paths[i],
                           test_file=self.test_paths[i],
                           output_file=self.pred_paths[i],
                           **train_kwargs)
-                this_result = ItemRecommendationEvaluation(verbose=False).evaluate_with_files(*eval_args)
+                this_result = ItemRecommendationEvaluation(verbose=False).evaluate_with_files(**eval_args)
                 results[self.eval_metric].append(
                     this_result[self.eval_metric]
                 )
                 
                 print("Split {} Loss: {}".format(i, results[self.eval_metric][i]))
                 
-                if i>self.early_stop_split:
+                if i>self.early_stop_split and self.iteration>0:
                     if max(results[self.eval_metric]) < self.best_loss:
                         break;
         return results
@@ -192,20 +193,20 @@ class AutoEstimator():
         
         end_time = time.time()
         
-        data_to_write = [str(date.today()), self.predictor, self.iteration, self.eval_metric, mean(results[self.eval_metric]), config, float(end_time-start_time)/60]
+#         data_to_write = [str(date.today()), self.predictor, self.iteration, self.eval_metric, mean(results[self.eval_metric]), config, float(end_time-start_time)/60]
         
-        with open(self.results_path+"optim_results.csv", 'a+', newline='') as f:
-                wr = csv.writer(f)
-                wr.writerow(data_to_write) 
+#         with open(self.results_path+"optim_results.csv", 'a+', newline='') as f:
+#                 wr = csv.writer(f)
+#                 wr.writerow(data_to_write) 
                 
         if self.predictor=='item':
             for i in range(len(results[self.eval_metric])):
-                results[self.eval_metric][i] = 1-results[self.eval_metric][i]
+                results[self.eval_metric][i] = -results[self.eval_metric][i]
         
    
         self.iteration+=1
         
-        return {'loss': mean(results[self.eval_metric]), 'iteration':self.iteration, 'config': config, 'status': STATUS_OK}
+        return {'loss': mean(results[self.eval_metric]), 'iteration':self.iteration, 'metric': self.eval_metric, 'time': float(end_time-start_time)/60, 'config': config, 'status': STATUS_OK}
     
     def fit(self):
         self.trials = Trials()

@@ -32,7 +32,7 @@ class RatingModel():
     def set_mf_params(self, name):
         self.factors = self.config[name+'_factors']
         self.learn_rate = self.config[name+'_learn_rate']
-        self.epochs = self.config[name+'_epochs']
+#         self.epochs = self.config[name+'_epochs']
         self.delta = self.config[name+'_delta']
     
     def set_most_popular_params(self, name):
@@ -58,7 +58,7 @@ class RatingModel():
                                   sep=self.sep, output_sep=self.output_sep).compute(verbose_evaluation=False)
     def get_mf(self):
         MatrixFactorization(train_file=self.train_file, test_file=self.test_file, output_file=self.output_file,
-                                  factors=int(self.factors), learn_rate=self.learn_rate, epochs=int(self.epochs), delta=self.delta,
+                                  factors=int(self.factors), learn_rate=self.learn_rate, delta=self.delta,
                                   sep=self.sep, output_sep=self.output_sep).compute(verbose_evaluation=False)
     def get_random(self):
         RandomRec(train_file=self.train_file, test_file=self.test_file, output_file=self.output_file, 
@@ -96,7 +96,7 @@ RATING_SPACE = hp.choice('recommender_type',[
     {
         'type': 'itemknn',
         'itemknn_k_neighbors': hp.quniform('itemknn_k_neighbors', 1, 100, 1),
-        'itemknn_similarity_metric': hp.choice('itemknn_similarity_metric', ['cosine', 'jaccard', 'euclidean', 'correlation', 'hamming']),
+        'itemknn_similarity_metric': hp.choice('itemknn_similarity_metric', ['cosine', 'euclidean', 'correlation']),#, 'hamming', 'jaccard']),
         'itemknn_as_similar_first': hp.choice('itemknn_as_similar_first', [True, False])        
     },
     
@@ -104,7 +104,7 @@ RATING_SPACE = hp.choice('recommender_type',[
         'type': 'mf',
         'mf_factors': hp.quniform('mf_factors', 10, 200, 1),
         'mf_learn_rate': hp.uniform('mf_learn_rate', 0.001, 0.1),
-        'mf_epochs': hp.quniform('mf_epochs', 10, 30, 1),
+#         'mf_epochs': hp.quniform('mf_epochs', 10, 30, 1),
         'mf_delta': hp.uniform('mf_delta', 0.001, 0.1)
     },
     
@@ -133,7 +133,7 @@ RATING_SPACE = hp.choice('recommender_type',[
     {
         'type': 'userknn',
         'userknn_k_neighbors': hp.quniform('userknn_k_neighbors', 1, 100, 1),
-        'userknn_similarity_metric': hp.choice('userknn_similarity_metric', ['cosine', 'jaccard', 'euclidean', 'correlation', 'hamming']),
+        'userknn_similarity_metric': hp.choice('userknn_similarity_metric', ['cosine', 'euclidean', 'correlation']),# 'hamming', 'jaccard']),
         'userknn_as_similar_first': hp.choice('userknn_as_similar_first', [True, False])  
     }    
 ])

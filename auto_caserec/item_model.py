@@ -141,9 +141,9 @@ class ItemModel():
 ITEM_SPACE = hp.choice('recommender_type',[
     {
         'type': 'itemknn',
-        'itemknn_k_neighbors': hp.quniform('itemknn_k_neighbors', 1, 200, 1),
+        'itemknn_k_neighbors': hp.quniform('itemknn_k_neighbors', 5, 50, 1),
         'itemknn_similarity_metric': hp.choice('itemknn_similarity_metric', ['cosine']),#, 'jaccard', 'euclidean', 'correlation', 'hamming']),
-        'itemknn_as_similar_first': hp.choice('itemknn_as_similar_first', [True, False])        
+        'itemknn_as_similar_first': hp.choice('itemknn_as_similar_first', [True, False])    
     },
     
     {
@@ -178,7 +178,7 @@ ITEM_SPACE = hp.choice('recommender_type',[
     
     {
         'type': 'userknn',
-        'userknn_k_neighbors': hp.quniform('userknn_k_neighbors', 1, 200, 1),
+        'userknn_k_neighbors': hp.quniform('userknn_k_neighbors', 5, 50, 1),
         'userknn_similarity_metric': hp.choice('userknn_similarity_metric', ['cosine']),#, 'jaccard', 'euclidean', 'correlation', 'hamming']),
         'userknn_as_similar_first': hp.choice('userknn_as_similar_first', [True, False])  
     }    
