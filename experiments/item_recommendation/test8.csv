@@ -1,0 +1,51 @@
+loss,iteration,metric,time,config,status
+-0.0091034,1,MAP,0.7576440771420797,{'type': 'random'},ok
+-0.35155739999999996,2,MAP,14.691552412509918,"{'bprmf_factors': 12.0, 'bprmf_learn_rate': 0.0946658827067728, 'type': 'bprmf'}",ok
+-0.4300596,3,MAP,2.415051440397898,"{'type': 'userknn', 'userknn_as_similar_first': True, 'userknn_k_neighbors': 11.0, 'userknn_similarity_metric': 'cosine'}",ok
+-0.008916333333333333,4,MAP,0.4626340707143148,{'type': 'random'},ok
+-0.461774,5,MAP,3.765117514133453,"{'type': 'userknn', 'userknn_as_similar_first': True, 'userknn_k_neighbors': 46.0, 'userknn_similarity_metric': 'cosine'}",ok
+-0.3193706666666667,6,MAP,8.61899910767873,"{'bprmf_factors': 36.0, 'bprmf_learn_rate': 0.001266012218268525, 'type': 'bprmf'}",ok
+-0.32578633333333334,7,MAP,1.5152344584465027,{'type': 'most_popular'},ok
+-0.39813166666666666,8,MAP,9.425426185131073,"{'bprmf_factors': 188.0, 'bprmf_learn_rate': 0.01947565373780248, 'type': 'bprmf'}",ok
+-0.008784666666666666,9,MAP,0.47512494723002113,{'type': 'random'},ok
+-0.4017563333333333,10,MAP,8.776965447266896,"{'bprmf_factors': 109.0, 'bprmf_learn_rate': 0.023385232234287037, 'type': 'bprmf'}",ok
+-0.32578633333333334,11,MAP,1.4727995673815408,{'type': 'most_popular'},ok
+-0.011614333333333334,12,MAP,0.43224553267161053,{'type': 'random'},ok
+-0.32578633333333334,13,MAP,1.4969309369723003,{'type': 'most_popular'},ok
+-0.4619972,14,MAP,3.4372775316238404,"{'type': 'userknn', 'userknn_as_similar_first': True, 'userknn_k_neighbors': 41.0, 'userknn_similarity_metric': 'cosine'}",ok
+-0.335663,15,MAP,8.43859931230545,"{'bprmf_factors': 19.0, 'bprmf_learn_rate': 0.009666296873550431, 'type': 'bprmf'}",ok
+-0.4582152,16,MAP,27.807704623540243,"{'itemknn_as_similar_first': False, 'itemknn_k_neighbors': 6.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.011626666666666667,17,MAP,0.43663175106048585,{'type': 'random'},ok
+-0.009976666666666667,18,MAP,0.434198005994161,{'type': 'random'},ok
+-0.4720118,19,MAP,28.844229714075723,"{'itemknn_as_similar_first': False, 'itemknn_k_neighbors': 12.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.4646064,20,MAP,29.345251067479452,"{'itemknn_as_similar_first': True, 'itemknn_k_neighbors': 11.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.4720118,21,MAP,29.768980693817138,"{'itemknn_as_similar_first': True, 'itemknn_k_neighbors': 12.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.4727454,22,MAP,29.444433613618216,"{'itemknn_as_similar_first': False, 'itemknn_k_neighbors': 26.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.4768658,23,MAP,30.495055091381072,"{'itemknn_as_similar_first': False, 'itemknn_k_neighbors': 38.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.4745624,24,MAP,30.570226629575092,"{'itemknn_as_similar_first': False, 'itemknn_k_neighbors': 42.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.4747128,25,MAP,31.298994115988414,"{'itemknn_as_similar_first': False, 'itemknn_k_neighbors': 50.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.4747128,26,MAP,32.15236618916194,"{'itemknn_as_similar_first': False, 'itemknn_k_neighbors': 50.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.4748738,27,MAP,30.563755345344543,"{'itemknn_as_similar_first': False, 'itemknn_k_neighbors': 39.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.4781254,28,MAP,30.710782158374787,"{'itemknn_as_similar_first': False, 'itemknn_k_neighbors': 35.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.47345,29,MAP,31.57549911737442,"{'itemknn_as_similar_first': False, 'itemknn_k_neighbors': 30.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.476262,30,MAP,30.48286209901174,"{'itemknn_as_similar_first': False, 'itemknn_k_neighbors': 32.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.4768658,31,MAP,30.824836651484173,"{'itemknn_as_similar_first': True, 'itemknn_k_neighbors': 38.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.39006466666666667,32,MAP,1.195770021279653,"{'type': 'userknn', 'userknn_as_similar_first': False, 'userknn_k_neighbors': 6.0, 'userknn_similarity_metric': 'cosine'}",ok
+-0.32578633333333334,33,MAP,1.4828289111455282,{'type': 'most_popular'},ok
+-0.455607,34,MAP,1.7427793264389038,"{'type': 'userknn', 'userknn_as_similar_first': False, 'userknn_k_neighbors': 26.0, 'userknn_similarity_metric': 'cosine'}",ok
+-0.4689938,35,MAP,29.473882500330607,"{'itemknn_as_similar_first': False, 'itemknn_k_neighbors': 23.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.47671,36,MAP,31.414085865020752,"{'itemknn_as_similar_first': True, 'itemknn_k_neighbors': 43.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.410182,37,MAP,9.525451457500457,"{'bprmf_factors': 198.0, 'bprmf_learn_rate': 0.09956635862703375, 'type': 'bprmf'}",ok
+-0.45330933333333334,38,MAP,1.7289892315864563,"{'type': 'userknn', 'userknn_as_similar_first': False, 'userknn_k_neighbors': 25.0, 'userknn_similarity_metric': 'cosine'}",ok
+-0.32578633333333334,39,MAP,1.4776971220970154,{'type': 'most_popular'},ok
+-0.48018,40,MAP,30.787019407749177,"{'itemknn_as_similar_first': False, 'itemknn_k_neighbors': 34.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.39926933333333336,41,MAP,8.888666792710621,"{'bprmf_factors': 126.0, 'bprmf_learn_rate': 0.06464622239825475, 'type': 'bprmf'}",ok
+-0.011701,42,MAP,0.4548301100730896,{'type': 'random'},ok
+-0.32578633333333334,43,MAP,1.5126089493433634,{'type': 'most_popular'},ok
+-0.46376066666666665,44,MAP,2.0381674130757648,"{'type': 'userknn', 'userknn_as_similar_first': False, 'userknn_k_neighbors': 36.0, 'userknn_similarity_metric': 'cosine'}",ok
+-0.47165039999999997,45,MAP,29.70430544614792,"{'itemknn_as_similar_first': False, 'itemknn_k_neighbors': 22.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.39514133333333334,46,MAP,8.797276055812835,"{'bprmf_factors': 69.0, 'bprmf_learn_rate': 0.05602752406549812, 'type': 'bprmf'}",ok
+-0.010722333333333334,47,MAP,0.43924214045206705,{'type': 'random'},ok
+-0.32578633333333334,48,MAP,1.4871002952257792,{'type': 'most_popular'},ok
+-0.477353,49,MAP,29.734977149963377,"{'itemknn_as_similar_first': False, 'itemknn_k_neighbors': 33.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.009772333333333334,50,MAP,0.4380079706509908,{'type': 'random'},ok

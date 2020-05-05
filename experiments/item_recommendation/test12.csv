@@ -1,0 +1,51 @@
+loss,iteration,metric,time,config,status
+-0.0105376,1,MAP,0.7270007411638896,{'type': 'random'},ok
+-0.0104984,2,MAP,0.7270159165064494,{'type': 'random'},ok
+-0.0071,3,MAP,0.4345103184382121,{'type': 'random'},ok
+-0.4755418,4,MAP,30.277094376087188,"{'itemknn_as_similar_first': False, 'itemknn_k_neighbors': 41.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.393644,5,MAP,8.619654981295268,"{'bprmf_factors': 74.0, 'bprmf_learn_rate': 0.05573146036852889, 'type': 'bprmf'}",ok
+-0.32578633333333334,6,MAP,1.4984311620394388,{'type': 'most_popular'},ok
+-0.45484199999999997,7,MAP,1.6153436819712321,"{'type': 'userknn', 'userknn_as_similar_first': True, 'userknn_k_neighbors': 21.0, 'userknn_similarity_metric': 'cosine'}",ok
+-0.011902333333333332,8,MAP,0.4346718351046244,{'type': 'random'},ok
+-0.010024,9,MAP,0.4357919494311015,{'type': 'random'},ok
+-0.453867,10,MAP,1.5817084232966105,"{'type': 'userknn', 'userknn_as_similar_first': True, 'userknn_k_neighbors': 19.0, 'userknn_similarity_metric': 'cosine'}",ok
+-0.32578633333333334,11,MAP,1.4998869935671488,{'type': 'most_popular'},ok
+-0.32578633333333334,12,MAP,1.4755355795224507,{'type': 'most_popular'},ok
+-0.4147863333333333,13,MAP,9.697896905740102,"{'bprmf_factors': 176.0, 'bprmf_learn_rate': 0.0392876201431219, 'type': 'bprmf'}",ok
+-0.4089793333333333,14,MAP,9.655077866713206,"{'bprmf_factors': 173.0, 'bprmf_learn_rate': 0.05537135139101352, 'type': 'bprmf'}",ok
+-0.010144666666666666,15,MAP,0.43495038350423176,{'type': 'random'},ok
+-0.32578633333333334,16,MAP,1.4804399013519287,{'type': 'most_popular'},ok
+-0.403314,17,MAP,9.140543556213379,"{'bprmf_factors': 141.0, 'bprmf_learn_rate': 0.029696016391187723, 'type': 'bprmf'}",ok
+-0.455795,18,MAP,1.702362565199534,"{'type': 'userknn', 'userknn_as_similar_first': False, 'userknn_k_neighbors': 24.0, 'userknn_similarity_metric': 'cosine'}",ok
+-0.44900133333333336,19,MAP,1.5549415707588197,"{'type': 'userknn', 'userknn_as_similar_first': True, 'userknn_k_neighbors': 18.0, 'userknn_similarity_metric': 'cosine'}",ok
+-0.32578633333333334,20,MAP,1.4815648396809895,{'type': 'most_popular'},ok
+-0.4755584,21,MAP,31.189843825499217,"{'itemknn_as_similar_first': False, 'itemknn_k_neighbors': 45.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.4755584,22,MAP,30.366875318686166,"{'itemknn_as_similar_first': False, 'itemknn_k_neighbors': 45.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.4735032,23,MAP,31.1343590259552,"{'itemknn_as_similar_first': False, 'itemknn_k_neighbors': 46.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.46216066666666666,24,MAP,16.818564891815186,"{'itemknn_as_similar_first': True, 'itemknn_k_neighbors': 7.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.4747128,25,MAP,31.331039194266,"{'itemknn_as_similar_first': False, 'itemknn_k_neighbors': 50.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.4736468,26,MAP,29.721601621309915,"{'itemknn_as_similar_first': False, 'itemknn_k_neighbors': 31.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.477601,27,MAP,30.859973402818046,"{'itemknn_as_similar_first': False, 'itemknn_k_neighbors': 36.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.4736468,28,MAP,30.628351108233133,"{'itemknn_as_similar_first': False, 'itemknn_k_neighbors': 31.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.4787314,29,MAP,31.069467906157175,"{'itemknn_as_similar_first': True, 'itemknn_k_neighbors': 37.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.47532233333333335,30,MAP,18.083205278714498,"{'itemknn_as_similar_first': True, 'itemknn_k_neighbors': 17.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.4787314,31,MAP,30.591309519608817,"{'itemknn_as_similar_first': True, 'itemknn_k_neighbors': 37.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.4727454,32,MAP,29.99444487094879,"{'itemknn_as_similar_first': True, 'itemknn_k_neighbors': 26.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.47165039999999997,33,MAP,29.937666817506155,"{'itemknn_as_similar_first': True, 'itemknn_k_neighbors': 22.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.4768658,34,MAP,30.95400497118632,"{'itemknn_as_similar_first': True, 'itemknn_k_neighbors': 38.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.4781254,35,MAP,30.87377504905065,"{'itemknn_as_similar_first': True, 'itemknn_k_neighbors': 35.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.008822333333333333,36,MAP,0.46036003828048705,{'type': 'random'},ok
+-0.32250466666666666,37,MAP,8.86753126780192,"{'bprmf_factors': 13.0, 'bprmf_learn_rate': 0.09982613042944918, 'type': 'bprmf'}",ok
+-0.465646,38,MAP,2.3429376085599265,"{'type': 'userknn', 'userknn_as_similar_first': False, 'userknn_k_neighbors': 47.0, 'userknn_similarity_metric': 'cosine'}",ok
+-0.4689938,39,MAP,29.13284776210785,"{'itemknn_as_similar_first': True, 'itemknn_k_neighbors': 23.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.009432333333333334,40,MAP,0.4335628310839335,{'type': 'random'},ok
+-0.4755418,41,MAP,30.782301938533784,"{'itemknn_as_similar_first': True, 'itemknn_k_neighbors': 41.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.32578633333333334,42,MAP,1.5026359875996909,{'type': 'most_popular'},ok
+-0.32678433333333334,43,MAP,8.703327914079031,"{'bprmf_factors': 33.0, 'bprmf_learn_rate': 0.00539300076060012, 'type': 'bprmf'}",ok
+-0.46318766666666666,44,MAP,2.2452131032943727,"{'type': 'userknn', 'userknn_as_similar_first': False, 'userknn_k_neighbors': 44.0, 'userknn_similarity_metric': 'cosine'}",ok
+-0.012830999999999999,45,MAP,0.4550573031107585,{'type': 'random'},ok
+-0.4736468,46,MAP,30.983535977204642,"{'itemknn_as_similar_first': True, 'itemknn_k_neighbors': 31.0, 'itemknn_similarity_metric': 'cosine', 'type': 'itemknn'}",ok
+-0.32578633333333334,47,MAP,1.5182657837867737,{'type': 'most_popular'},ok
+-0.390501,48,MAP,8.852949408690135,"{'bprmf_factors': 99.0, 'bprmf_learn_rate': 0.08889057376397316, 'type': 'bprmf'}",ok
+-0.4610993333333333,49,MAP,2.0637826760609945,"{'type': 'userknn', 'userknn_as_similar_first': False, 'userknn_k_neighbors': 35.0, 'userknn_similarity_metric': 'cosine'}",ok
+-0.010251666666666666,50,MAP,0.4396083275477091,{'type': 'random'},ok
